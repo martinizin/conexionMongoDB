@@ -5,9 +5,9 @@ from datetime import datetime
 # Cadena de conexión a MongoDB
 def conectar_a_mongo():
     try:
-        uri = "mongodb+srv://admintest:UDLA@clusterudla01.95cou.mongodb.net/"
+        uri = "Reemplaza por la cadena de conexión del cluster de mongoDB"
         cliente = MongoClient(uri)
-        db = cliente['CRMBP']  
+        db = cliente['Nombre de la base de datos']  
         return db
     except Exception as e:
         print(f"Error al conectar a MongoDB: {e}")
